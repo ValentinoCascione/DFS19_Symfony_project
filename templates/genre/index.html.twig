@@ -1,0 +1,10 @@
+{% extends 'base/base.html.twig' %}
+
+{% block title %}Films par acteur{% endblock %}
+
+{% block body %}
+    <h1>Film(s) par genre: {{ genre.name }}</h1>
+    {% for movie in movies %}
+        <h3>{{ movie.name }}</h3>
+    {% endfor %}
+{% endblock %}
